@@ -2,9 +2,9 @@
 $host = "localhost";
 $user = getenv("DB_USER");
 $password = getenv("DB_PASS");
-$dbs   = "safe_voice";
+$db = "safe_voice";
 
-$conn = new mysqli($host, $user, $password, $dbs);
+$conn = new mysqli($host, $user, $password, $db);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
