@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safe-Voice | Anonymous Reporting</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Safe-Voice</h1>
+    <p>Report harassment, bullying, or safety concerns anonymously</p>
+</header>
+
+<main>
+    <form id="reportForm" action="submit.php" method="POST">
+        <label for="category">Category of Concern:</label>
+        <select name="category" id="category" required>
+            <option value="">--Select--</option>
+            <option value="Harassment">Harassment</option>
+            <option value="Physical Bullying">Physical Bullying</option>
+            <option value="Cyberbullying">Cyberbullying</option>
+            <option value="Safety">Safety</option>
+            <option value="Other">Other</option>
+        </select>
+
+
+        <label for="details">Details:</label>
+        <textarea name="details" id="details" rows="6" required></textarea>
+
+        <!-- New field: Where did it happen -->
+        <label for="location">Where did it happen:</label>
+        <input type="text" name="location" id="location" placeholder="e.g., Library, Lecturers Office" required>
+
+        <!-- New field: Date -->
+        <label for="incident_date">Date of Incident:</label>
+        <input type="date" name="incident_date" id="incident_date" required>
+
+        <button type="submit">Submit Report</button>
+    </form>
+    
+    <section id="tracking">
+        <h2>Track Your Case</h2>
+        <form action="track.php" method="GET">
+            <input type="text" name="code" placeholder="Enter tracking code" required>
+            <button type="submit">Check Progress</button>
+        </form>
+    </section>
+
+</main>
+</body>
+</html>
