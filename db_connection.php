@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";   // XAMPP default
-$user = "root";        // default MariaDB user
-$pass = "snowden24";            // default password (empty unless you set one)
-$db   = "safe_voice";   // must match the database you created
+$host = "localhost";
+$user = "root";
+$pass = "snowden24";
+$db   = "safe_voice";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
