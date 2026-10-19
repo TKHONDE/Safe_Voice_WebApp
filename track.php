@@ -3,7 +3,7 @@
 include 'db_connection.php';
 
 // Home Button
-echo '<br><br><a href="index.html">
+echo '<br><br><a href="index.html#category">
         <button type="button">Home</button>
       </a>';
 
