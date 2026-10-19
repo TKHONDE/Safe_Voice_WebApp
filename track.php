@@ -2,6 +2,11 @@
 //database connection file
 include 'db_connection.php';
 
+// Home Button
+echo '<br><br><a href="index.html">
+        <button type="button">Home</button>
+      </a>';
+
 // Get the tracking code from the form
 $code = isset($_GET['code']) ? $_GET['code'] : '';
 ?>
