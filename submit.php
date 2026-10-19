@@ -10,7 +10,7 @@ $details  = isset($_POST['details']) ? $_POST['details'] : '';
 $code = uniqid("SV-");
 
 // Pick a random status (for demo purposes)
-$statuses = ["Pending", "In Progress", "Under Review, visit Student Affairs Office", "Resolved"];
+$statuses = ["Pending", "In Progress", "Under Review" , "Resolved"];
 $status = $statuses[array_rand($statuses)];
 
 // Insert into database
