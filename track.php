@@ -4,22 +4,36 @@ include 'db_connection.php';
 
 // Get the tracking code from the form
 $code = isset($_GET['code']) ? $_GET['code'] : '';
-
-if (!empty($code)) {
-    $sql = "SELECT status FROM reports WHERE code='$code'";
-    $result = $conn->query($sql);
-
-    if ($result && $result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        echo "<h2>Case Status</h2>";
-        echo "<p>Tracking Code: <b>$code</b></p>";
-        echo "<p>Status: <b>" . $row['status'] . "</b></p>";
-    } else {
-        echo "<p>No case found with this tracking code.</p>";
-    }
-} else {
-    echo "<p>Please enter a tracking code.</p>";
-}
-
-$conn->close();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Case</title>
+    <!-- Link your main CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="track-page">
+<div class="track-container">
+    <?php
+    if (!empty($code)) {
+        $sql = "SELECT status FROM reports WHERE code='$code'";
+        $result = $conn->query($sql);
+
+        if ($result && $result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            echo "<h2>Case Status</h2>";
+            echo "<p>Tracking Code: <b>$code</b></p>";
+            echo "<p>Status: <b>" . $row['status'] . "</b></p>";
+        } else {
+            echo "<p class='error'>No case found with this tracking code.</p>";
+        }
+    } else {
+        echo "<p class='error'>Please enter a tracking code.</p>";
+    }
+
+    $conn->close();
+    ?>
+</div>
+</body>
+</html>

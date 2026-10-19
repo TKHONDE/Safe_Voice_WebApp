@@ -67,3 +67,34 @@ button {
 button:hover {
     background: #9c00d6;
 }
+
+/* Track page specific styles */
+.track-page {
+    background-color: #f0f8ff; /* light blue background */
+    font-family: Arial, sans-serif;
+}
+
+.track-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.track-container h2 {
+    color: #004080;
+}
+
+.track-container p {
+    font-size: 18px;
+    color: #333;
+}
+
+.track-container .error {
+    color: red;
+    font-weight: bold;
+}
+
