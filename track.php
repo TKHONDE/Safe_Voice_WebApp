@@ -1,5 +1,5 @@
 <?php
-// Include the database connection file
+//database connection file
 include 'db_connection.php';
 
 // Get the tracking code from the form
