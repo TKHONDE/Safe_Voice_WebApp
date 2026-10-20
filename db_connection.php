@@ -1,4 +1,5 @@
 <?php
+// Variables and assignment
 $host = "localhost";
 $user = getenv("DB_USER");
 $password = getenv("DB_PASS"); // Do not expose your database password in your code
