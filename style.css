@@ -71,7 +71,7 @@ button:hover {
 
 /* TRACK PAGE specific styles */
 .track-page {
-    background-color: #f0f8ff; /* light blue background */
+    background-color: #ffffff; /* light blue background */
     font-family: Arial, sans-serif;
 }
 
@@ -99,3 +99,33 @@ button:hover {
     font-weight: bold;
 }
 
+/* SUBMIT PAGE specific styles */
+
+.submit-page {
+    background-color: #f0f8ff; /* light blue background */
+    font-family: Arial, sans-serif;
+}
+
+.submit-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.submit-container h2 {
+    color: #004080;
+}
+
+.submit-container p {
+    font-size: 18px;
+    color: #333;
+}
+
+.submit-container .error {
+    color: red;
+    font-weight: bold;
+}
