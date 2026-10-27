@@ -35,8 +35,10 @@ $sql = "INSERT INTO reports (category, details, code, status)
 
 if ($conn->query($sql) === TRUE) {
     echo "<h2>Report Submitted Successfully</h2>";
-    echo "<p>Your tracking code is: <b>$code</b> Copy & paste it somewhere safe</p>";
-    echo "<p>Keep this code safe to check your case progress later.</p>";
+
+    echo "<p>Your tracking code is: <b>$code</b> </p>";
+
+    echo "<p>Copy & paste it somewhere safe to check your case progress later.</p>";
 
     // Track my case button (with precise position of the option on the page)
     echo '<br><br><a href="index.html#tracking">
