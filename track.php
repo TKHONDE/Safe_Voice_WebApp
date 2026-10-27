@@ -15,7 +15,7 @@ $code = isset($_GET['code']) ? $_GET['code'] : '';
 <head>
     <meta charset="UTF-8">
     <title>Track Case</title>
-    <!-- Link your main CSS file -->
+    <!-- Link main CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="track-page">
