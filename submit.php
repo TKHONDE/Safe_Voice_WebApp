@@ -17,6 +17,22 @@ $status = $statuses[array_rand($statuses)];
 $sql = "INSERT INTO reports (category, details, code, status) 
         VALUES ('$category', '$details', '$code', '$status')";
 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Submitted</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="submit-page">
+<div class="submit-container">
+
+    <?php
+
 if ($conn->query($sql) === TRUE) {
     echo "<h2>Report Submitted Successfully</h2>";
     echo "<p>Your tracking code is: <b>$code</b> Copy & paste it somewhere safe</p>";
@@ -33,3 +49,5 @@ if ($conn->query($sql) === TRUE) {
 // Close connection
 $conn->close();
 ?>
+
+

@@ -129,3 +129,16 @@ button:hover {
     color: red;
     font-weight: bold;
 }
+.submit-container button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-container button:hover {
+    background-color: #0066cc;
+}
